@@ -19,6 +19,7 @@ interface Data {
     };
 }
 
+
 const initCors = (request: functions.https.Request, response: functions.Response<any>): void => {
     response.set("Access-Control-Allow-Origin", "*");
     if (request.method === "OPTIONS") {
